@@ -1,0 +1,16 @@
+p#demo {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0px;
+  color:#e6e6e6;
+  background-color:black;
+  width:50%;
+  margin:auto;
+}
+
+p#nrCuvinte{
+	text-align:center;
+	color:white;
+	background-color:grey;
+	font-size:20px;
+}

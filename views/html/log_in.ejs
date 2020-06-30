@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> SneakerMarket - Log in </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type = "text/css" rel="stylesheet" href="/css/index.css"/>
+    <link type = "text/css" rel="stylesheet" href="/css/log_in.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/imagini/favicon/favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="author" content="Buduroes Elena Bianca">
+	<meta name="description" content="Sneaker Market">
+    <meta name="keywords" content="log in, my account, account, SNEAKERS, adress, name, password, adidas, nike">
+</head>
+
+
+<body>
+
+<%- include("../fragmente/header")  %>
+
+<main>
+
+<br/><br/>
+
+<% if(!locals.username) {  %>
+<form action="/log_in" method="post">
+  <div class="imgcontainer">
+    <img src="/imagini/log_in/hello.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="parola"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="parola" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn"><a class = "l" href = "/index"> Cancel </a></button>
+    <span class="psw">You don't have an account? <a href="/inregistrare">Sign up!</a></span>
+  </div>
+</form>
+
+<% }
+	else { %>
+		<div class="imgcontainer">
+			<img src="/imagini/log_in/hello.png" alt="Avatar" class="avatar">
+		</div>
+  
+		<div class = "container"> 
+		<h2> You are Logged in as: <%= locals.username  %> </h2>
+		<button><a class = "l" href="/logout">Logout</a></button>
+	<% } %>
+	
+
+</main>
+
+<br/><br/><br/>
+<%- include("../fragmente/footer")  %>
+</body>
+</html>

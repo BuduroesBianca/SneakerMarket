@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> SneakerMarket - Adidas </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type = "text/css" rel="stylesheet" href="/css/index.css"/>
+    <link type = "text/css" rel="stylesheet" href="/css/style.css"/>
+	<link type = "text/css" rel="stylesheet" href="/css/admin.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/imagini/favicon/favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="author" content="Buduroes Elena Bianca">
+	<meta name="description" content="Sneaker Market">
+    <meta name="keywords" content="adidas, yeezy, static, yecheil, black, yeezy 350, kanye west, nike">
+	
+	<!-- pentru afisarea ca template am downloadat ejs.min.js de la https://github.com/mde/ejs/releases/tag/v3.0.2 -->
+	<script src="js/ejs.min.js"></script>
+
+	<script src="js/scriptAdmin.js"></script>
+	
+</head>
+
+<body>
+<%- include("../fragmente/header")  %>
+
+<main>
+<br/><br/><br/>
+<div id="myDIV" class="header1">
+  <h2>Product Management</h2>
+  <br/>
+  <input type="text" id="myInput" placeholder="Insert Name and Price of the product">
+  <span onclick = "newElement()" class="addBtn">Add</span>
+  <br/><br/>
+  <p> In the list below you'll find the products that are gonna release soon and appear on the site.</p>
+  <p> You can add new items that you'll release in the future. Or remove them if you changed your mind. </p>
+</div>
+
+<ul id="myUL">
+  <li id ="pm"> Yeezy 700 Inertia Price: 200$ </li>
+  <li id ="pm"> Adidas Yeezy Boost 350 Blue Tint price: 220$</li>
+  <li id ="pm">Nike SB Dunklow Strangelove Price: 350$</li>
+  <li id ="pm">Nike Air Jordan 1 High Retro OG 'Crimson Tint' Price: 150$</li>
+</ul>
+
+<p> Stock update:  </p><p id = "demo"></p>
+
+</main>
+
+<br/><br/><br/>
+
+<%- include("../fragmente/footer")  %>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> SneakerMarket - Home </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type = "text/css" rel="stylesheet" href="/css/index.css"/>
+    <link type = "text/css" rel="stylesheet" href="/css/stil_pagina_principala.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/imagini/favicon/favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="author" content="Buduroes Elena Bianca">
+	<meta name="description" content="Sneaker Market">
+    <meta name="keywords" content="sneaker, nike, Off White, Jordan, About, SNEAKERS, Virgil Abloh, like, blazer, retro, high">
+	
+	<script src="js/scriptHome.js"></script>
+</head>
+
+<body>
+<%- include("../fragmente/header")  %>
+
+<main>
+<br/>
+
+<div id = "happy">
+	<p> Happy Hours Discounts!</p>
+	<center><img src = "/imagini/adidas/0.gif" width = "220px"></img></center><br/>
+</div>
+
+<br/>
+<input type = "text" id = "age" placeholder = "MM#DD#YYYY"></input>
+<button id = "old">How old are you?</button>
+<button id = "hide">Hide Images</button>
+<p id="print"></p>
+
+
+	<div class = "container">
+		<div class = "container-item">
+			<figure>
+				<img id = "photo_header" alt="Jordan 1 Off-White" src="/imagini/pagina_principala/1.jpg">
+				<br/><br/>
+				<figcaption><b><em>Jordan 1 Retro High X Off white OG </em></b></figcaption>
+                        </figure>
+				
+				<p id = "paragraph">Creative director Virigl Abloh describes his fashion label as <u>"the grey area between black and white." Founded in 2012, OFF-WHITE bridges the gap between streetwear and luxury and is known for its stylized use of quotation marks, bold graphics and unconventional silhouettes typified in its Nike collaboration.</p>
+			
+		</div>
+	</div>
+
+<hr class="line">
+<br/>
+
+<input type = "text" id = "color" placeholder = "Type a color"></input>
+<button id = "bckcolor">Change the background-color</button>
+
+
+<button id = "reducere">If you click here you will receive a promo code!</button>
+<br/><br/>
+<hr class="line">
+
+
+<section id = "galerie">
+	<h2> You may also like...</h2>
+	
+	<div id = "gr">
+		<figure>
+			<img src = "/imagini/pagina_principala/2.jpg" alt = "sneakers Off white">
+			<figcaption>Off White Air Jordan 1 Retro High University Blue UNC</figcaption>
+		</figure>
+		
+		<figure>
+			<img src = "/imagini/pagina_principala/3.jpg" alt = "sneakers Off white">
+			<figcaption>AIR JORDAN 1 RETRO HIGH OFF-WHITE THE TEN CHICAGO</figcaption>
+		</figure>
+		
+		<figure>
+			<img src = "/imagini/pagina_principala/4.jpg" alt = "sneakers Off white">
+			<figcaption>OFF WHITE NIKE BLAZER MID ALL HALLOW’S EVE</figcaption>
+		</figure>
+		
+		<figure>
+			<img src = "/imagini/pagina_principala/5.jpg" alt = "sneakers Off white">
+			<figcaption>OFF WHITE NIKE AIR PRESTO WHITE 2018</figcaption>
+		</figure>
+	</div>
+</section>
+
+
+<br/><br/>
+<hr class="line">
+
+</main>
+
+<%- include("../fragmente/footer")  %>
+
+</body>
+</html>

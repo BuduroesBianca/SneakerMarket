@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> SneakerMarket - Collaborations </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type = "text/css" rel="stylesheet" href="/css/index.css"/>
+    <link type = "text/css" rel="stylesheet" href="/css/collaborations.css"/>
+	<link type = "text/css" rel="stylesheet" href="/css/style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/imagini/favicon/favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="author" content="Buduroes Elena Bianca">
+	<meta name="description" content="Sneaker Market">
+    <meta name="keywords" content="Off White, nike, travis scott, sacai, dunk, sb dunk, pine green, low, chicago">
+	
+	<script src="js/ejs.min.js"></script>
+
+	<script src="js/scriptCollab.js"></script>
+</head>
+
+<body>
+	
+<%- include("../fragmente/header")  %>
+
+<main>
+<br/><br/>
+
+<h1> Shop Collaborations </h1>
+<h3> Nike X Travis Scott - Nike X Sacai - Nike X Off White </h3>
+<br/>
+
+	<h3>TRAVIS SCOTT</h3> <p>Hailing from Houston, rapper <b>Travis Scott</b> has risen to the top of the charts while also influencing sneaker,street and <i>youth culture</i>. Scott has a penchant for wearing older, highly sought after styles while also collaborating with <b>Nike</b> and <b>Jordan Brand</b> to create unique designs that fully embrace Travis Scott’s <i>persona</i>.</p>
+	
+	
+	<h3>SACAI</h3> <p> Founded in 1999, <b>Chitose Abe</b> started Sacai reinterpreting traditional silhouettes with an experimental 
+	look and feel. Abe’s sneaker collaborations have also pushed the boundaries of sport and style.</p>
+	
+	
+	<h3>OFF WHITE</h3> <p> Using <i>RECONSTRUCT</i> and <i>GHOSTING</i> approaches, Virgil shook the sneaker culture with his groundbreaking 
+	collaboration with Nike.</p>
+
+
+
+<br/>
+
+<button id ="sortD">Price high to low  </button>
+<button id ="sortC">Price low to high</button>
+
+<input type="number" id="priceToCheck" placeholder = "Max value of the price">
+<button id = "filter">Filter</button>
+
+
+<br/><br/>
+
+<hr class = "line">
+
+<br/>
+
+<div class = "afis" id="afisCollab"></div>
+
+<br/><br/>
+
+</main>
+
+<%- include("../fragmente/footer")  %>
+
+</body>
+</html>

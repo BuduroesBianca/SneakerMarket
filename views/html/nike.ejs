@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> SneakerMarket - Nike </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type = "text/css" rel="stylesheet" href="/css/index.css"/>
+    <link type = "text/css" rel="stylesheet" href="/css/style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/imagini/favicon/favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="author" content="Buduroes Elena Bianca">
+	<meta name="description" content="Sneaker Market">
+    <meta name="keywords" content="adidas, nike, sacai, travis scott, jordan, retro, high, retro high, chicago, red, jordan 1, sb, dunk, low">
+	
+	<script src="js/ejs.min.js"></script>
+
+	<script src="js/scriptNike.js"></script>
+</head>
+
+<body>
+
+<%- include("../fragmente/header")  %>
+
+<main>
+<br/><br/>
+
+<h1> Shop Nike </h1>
+<br/>
+<p>Founded as <em>Blue Ribbon Sports</em>, in 1964 Phil Knight and University of Oregon Track Coach Bill Bowerman created their first <q>waffle</q> sneaker. 
+Renamed in 1971, the year Carolyn Davidson designed <i>the iconic Swoosh</i>, Nike has become synonymous with performance and innovation, producing the 
+<b>Air Force 1, Air Max and more</b>.</p>
+<br/>
+
+<button id ="sortD">Price high to low </button>
+<button id ="sortC">Price low to high</button>
+
+<input type="number" id="priceToCheck" placeholder = "Max value of the price">
+<button id = "filter">Filter</button>
+
+
+<br/><br/>
+
+<hr class = "line">
+
+<br/>
+
+<div class = "afis" id="afisNike"></div>
+
+<br/><br/>
+
+</main>
+
+<%- include("../fragmente/footer")  %>
+
+</body>
+</html>

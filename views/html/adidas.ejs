@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> SneakerMarket - Adidas </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type = "text/css" rel="stylesheet" href="/css/index.css"/>
+    <link type = "text/css" rel="stylesheet" href="/css/style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/imagini/favicon/favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="author" content="Buduroes Elena Bianca">
+	<meta name="description" content="Sneaker Market">
+    <meta name="keywords" content="adidas, yeezy, static, yecheil, black, yeezy 350, kanye west, nike">
+	
+	<!-- pentru afisarea ca template am downloadat ejs.min.js de la https://github.com/mde/ejs/releases/tag/v3.0.2 -->
+	<script src="js/ejs.min.js"></script>
+
+	<script src="js/scriptAdidas.js"></script>
+	
+</head>
+<body>
+
+<%- include("../fragmente/header")  %>
+
+<main>
+<br/><br/>
+
+<h1> Shop Adidas Yeezy </h1>
+<br/>
+<p>Since the first <i>Nike Air Max 180</i> in 2005, Kanye has set <q>unparalleled standards for progressive sneaker design</q>. Partnering with the Three Stripes, the adidas Yeezy Boost line has influenced streetwear, high-fashion and sports. Spanning back fourteen years, SNEAKERS looks back on designs <b>inspired by Kanye West</b>.</p>
+
+<input type="text" id="myInput" placeholder="Search for names.." title="Type in a name">
+<button id = "search">Search</button>
+<p id = "demo"></p>
+
+<button id ="sortD">Price high to low  </button>
+<button id ="sortC">Price low to high</button>
+
+
+<input type="number" id="priceToCheck" placeholder = "Max value of the price"></input>
+
+<button  id = "filter">Filter</button>
+<button id = "removePrice">Remove the price, I don't care how much it costs!</button>
+<button id ="discount">I do care about the price.. Show me some discounts!</button>
+<br/><br/>
+
+<hr class = "line">
+
+<br/>
+
+<div class = "afis" id="afisAdidas"></div>
+
+<br/><br/>
+
+
+</main>
+
+<%- include("../fragmente/footer")  %>
+
+</body>
+</html>

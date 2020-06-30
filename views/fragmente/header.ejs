@@ -1,0 +1,57 @@
+
+<header>
+<% if(locals.username) { %>
+        <p class="userlogged">Welcome, <%= locals.username %>! <a class="logout" href="/logout">Logout</a></p>
+	    
+	<% } %>
+
+<% if(locals.username == "admin") {  %>
+<nav id="nav">
+        <ul id = "meniu">
+		
+			<li class = "right"><a href = "/admin" > Admin </a></li>
+            <li class = "right"> <a href = "/index"/>Home</a></li>
+
+            <li class = "right" id = "sm"> <a href ="/adidas"/>Sneakers</a>
+                <ul id = "submeniu">
+                    <li><a href="/adidas">Adidas</a></li>
+                    <li><a href="/nike">Nike</a></li>
+                    <li><a href="/collaborations"/>Collaborations</a></li>
+                </ul>
+            </li>
+			
+
+            <li class = "right"> <a href ="/shopping_bag"/>Shopping Bag</a></li>
+            <li class = "right"> <a href ="/log_in"/>Log in</a></li>
+
+            <li class = "left"><img src = "/imagini/meniu/logo.png" width = 100 alt = "logo"></li>
+        </ul>
+    </nav>
+
+<% }
+	else { %>
+	
+	<nav id="nav">
+        <ul id = "meniu">
+            <li class = "right"> <a href = "/index"/>Home</a></li>
+
+            <li class = "right" id = "sm"> <a href ="/adidas"/>Sneakers</a>
+                <ul id = "submeniu">
+                    <li><a href="/adidas">Adidas</a></li>
+                    <li><a href="/nike">Nike</a></li>
+                    <li><a href="/collaborations"/>Collaborations</a></li>
+                </ul>
+            </li>
+			
+
+            <li class = "right"> <a href ="/shopping_bag"/>Shopping Bag</a></li>
+            <li class = "right"> <a href ="/log_in"/>Log in</a></li>
+
+            <li class = "left"><img src = "/imagini/meniu/logo.png" width = 100 alt = "logo"></li>
+        </ul>
+    </nav>
+	
+	<% } %>
+
+
+</header>

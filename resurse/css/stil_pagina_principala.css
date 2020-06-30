@@ -1,0 +1,132 @@
+main{
+  text-align: center;
+  font-size:1.3rem;
+}  
+
+div#happy{
+	background-color:black;
+	color:white;
+	font-size:30px;
+	text-align:center;
+	padding:15px;
+}
+
+p#print {
+	font-size:25px;
+	color:black;
+	text-align:center;
+}
+
+.container {
+	display:grid;
+	grid-template-columns:auto;
+	padding: 10px;
+	
+}
+.container-item{
+	margin-top: 0px;
+	padding:0px;
+	font-style:italic;
+	font-size:20px;
+}
+button {
+  background-color: #bfbfbf;
+  color: white;
+  padding: 14px 17px;
+  margin: 8px 3px;
+  border:none;
+  cursor: pointer;
+  width:40%;
+  font-size:20px;
+}
+ 
+ input{
+  padding: 14px 17px;
+  margin: 8px 3px;
+  border: 1px solid #bfbfbf;
+  cursor: pointer;
+  width:20%;
+  font-size:20px;
+  margin-left:20px;
+}
+button#old{
+	width:30%;
+} 
+button#hide{
+	width:30%;
+}
+
+input#age{
+	width:25%;
+}
+
+button#reducere{
+	background-color:#99ccff;
+}
+
+button#bckcolor{
+	background-color:#99ccff;
+}
+
+button:hover {
+  opacity: 0.8;
+  background-color:black;
+  border:none;
+  
+}
+
+
+
+
+
+  /*Imagine */
+  
+#photo_header{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+	margin:0px;
+	
+  }
+
+  /*Galerie imagini */
+  #gr figcaption {
+	  font-size:15px;
+  }
+  
+  #gr{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  
+  #gr img {
+    width:100%;
+  }
+  
+  #gr figure:hover {
+  box-shadow: grey 8px 10px 8px;
+}
+
+#gr figure {
+  transition: all 0.3s linear;
+}
+  
+  /* Media*/
+@media screen and (min-width: 400px) and (max-width: 700px){
+  #gr{
+    grid-template-columns: auto auto;
+}
+  .grid-container{
+    grid-template-columns: auto;
+    grid-template-rows:auto auto;
+  }
+}
+
+@media screen and (max-width: 400px){
+  #gr{
+    grid-template-columns: auto;
+  }
+  .grid-container{
+    grid-template-columns: auto;
+  }
+}

@@ -1,0 +1,98 @@
+main {
+	margin-left: 70px;
+	margin-right: 70px;
+	text-align: center;	
+	font-size:1.3rem;
+}
+.afis{
+	display:grid;
+	grid-template-columns: auto auto auto;
+}
+
+p {
+	font-size:20px;
+}
+
+.afisA p {
+	font-size:10px;
+}
+.afisAdmin{
+	border:1px solid grey;
+	padding:0.4em;
+	display:grid;
+	grid-template-columns: auto auto;
+}
+
+.afisA img{
+	width:100px;
+}
+
+.afis figcaption {
+	font-size:17px;
+}
+
+.afis img {
+  width:100%;
+}
+
+.afis figure:hover {
+  box-shadow: grey 0px 8px 15px;
+}
+
+.afis figure {
+  transition: all 0.3s linear;
+}
+
+#myInput {
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: none;
+  margin-bottom: 12px;
+  background-color:#f2f2f2;
+}
+button {
+  background-color: #ff9966;
+  color: white;
+  padding: 14px 17px;
+  margin: 8px 3px;
+  border:none;
+  cursor: pointer;
+  width:25%;
+  font-size:15px;
+}
+
+button:hover {
+  opacity: 0.8;
+  background-color:black;
+  
+}
+
+button#search{
+	background-color: grey;
+}
+
+button#removePrice{
+	width:40%;
+}
+
+button#discount{
+	width:40%;
+}
+button#filter {
+	width: 10%;
+}
+
+input{
+  border: 10px solid black;
+  padding: 14px 17px;
+  margin: 8px 3px;
+  border: none;
+  cursor: pointer;
+  width:15%;
+  font-size:15px;
+}
+
+input#priceToCheck{
+	background-color:#fff2e6;
+}

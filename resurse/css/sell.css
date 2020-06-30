@@ -1,0 +1,15 @@
+main {
+	margin-left: 60px;
+	margin-right: 60px;
+	font-size:1.3rem;
+}
+
+ h1 {
+	padding:20px;
+}
+
+ p {
+	padding:10px;
+	font-size:1.3rem;
+	text-align:justify;
+}

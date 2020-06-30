@@ -1,0 +1,73 @@
+main {
+	margin-left: 60px;
+	margin-right: 60px;
+	font-size:1.3rem;
+}
+
+ h1, h2 {
+	padding:20px;
+}
+
+ p {
+	padding:10px;
+	font-size:1.3rem;
+	text-align:center;
+}
+
+
+.galerie{
+	width:400px;
+	height:300px;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:6rem;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.galerie figure{
+	position:relative;
+	width:400px;
+	height:300px;
+	margin-inline-start:0px;
+	margin-block-end:0px;
+	
+}
+
+#galerie_animata figure{
+	position:absolute;
+	left:0;
+	top:0;
+	animation-name:galerie_animata;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-duration:12s;	
+	transform:scale(1,1);
+	transform-origin:0px center;
+}
+
+
+#galerie_animata figure:nth-of-type(4){
+	animation-delay:0s;
+}
+#galerie_animata figure:nth-of-type(3){
+	animation-delay:3s;
+}
+#galerie_animata figure:nth-of-type(2){
+	animation-delay:6s;
+}
+#galerie_animata figure:nth-of-type(1){
+	animation-delay:9s;
+}
+
+
+@keyframes galerie_animata{ 
+	0% {z-index:10;opacity:1;} /*perioada 0-5% in care se afiseaza fara efect */
+	5% {opacity:1;transform:skewX(0deg);}
+	13%{opacity:1;transform:skewX(10deg)} /* de  aici doresc sa descresc si opacitatea;*/
+	14.28%{z-index:10;opacity:1;transform:skewX(30deg);}
+	14.281%{z-index:-1;}/* il ascund cat mai in spate sa nu vina peste imaginile care erau mai sus in html decat el*/
+	85.71999999%{opacity:1;transform:skewX(0deg);z-index:-1;}	
+	85.72%{z-index:0;}/*setez z-index la 0 ca sa revina la ordinea normala de afisare*/
+	100%{opacity:1;z-index:0;}
+}

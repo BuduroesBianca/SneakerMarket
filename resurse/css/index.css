@@ -1,0 +1,311 @@
+header{
+	padding-top: 50px;
+}
+
+html{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 15px;
+}
+
+.active{
+background-color: #666;
+  color: white;
+}
+
+p#nrCuvinte{
+	text-align:center;
+	color:white;
+	background-color:grey;
+	font-size:20px;
+}
+#coming_soon{
+	margin-top:10%;
+	margin-bottom:5%;
+}
+
+#social_media{
+	margin-top:1.5rem;
+	margin-bottom:1.5rem;
+	font-size:1.5rem;
+}
+
+
+
+.centrat {
+	text-align:center;
+}
+
+hr.line {
+	border: 1px solid grey;
+}
+
+h1, h2{
+	text-align: center;
+	font-weight: bold;
+}
+h2{
+	font-size: 1.36em;
+}
+
+/* Meniu */
+nav{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	
+}
+ul#meniu, ul#submeniu{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:white  ;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:white;
+	border-radius:20px;
+	font-size:1.3rem;
+	
+}
+ul#meniu>li>a, #submeniu>li>a{
+	display: block;
+	overflow: hidden;
+	color: #000000;
+	text-align: center;
+	padding: 23px 20px;
+	text-decoration: none;
+}
+ul#submeniu{
+	position: absolute;
+	display: none;
+	z-index: 1;
+	font-size:0.85rem;
+}
+li#sm:hover #submeniu{
+	display: block;
+	background-color:#fff6e6;
+}
+li.left{
+	float: left;
+	padding-left:10px;
+	padding-top:10px;
+}
+li.right{
+	float: right;
+}
+ul#meniu>li>a:hover, #submeniu>li>a:hover{
+	background-color: black;
+	color: white;
+	border-radius:20px;
+}
+
+
+
+
+
+/* Footer */
+
+#btt{
+	font-size:20px;
+	text-align:center;
+}
+
+
+
+#poza_app{
+	width:100%;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    background-color: black;
+    padding: 10px;
+    color:white;
+	height: 10%;
+  }
+  .grid-item {
+    background-color: black ;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+   
+  }
+
+
+
+
+.grid-container-footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+	grid-template-rows:auto;
+    background-color: #fff6e6;
+    padding: 10px;
+    color:black;
+	height: 10%;
+
+  }
+  
+  
+  footer h2{
+	  text-align: left;
+	  font-size:1em;
+  }
+  
+  footer li{
+	  list-style-type:none;
+	  padding:5px;
+  }
+  footer a{
+	text-decoration: none;
+	color: black;	
+  }
+
+footer a:hover{
+	color: grey;
+  }
+
+
+@media screen and (min-width:700px) and (max-width:900px){
+	
+	.grid-container{
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+		
+    }
+	.grid-item>h2{		
+		text-align: center;
+  }
+	
+}
+
+  
+@media screen and (min-width:400px) and (max-width:700px){
+	
+	
+	
+	nav{
+		width:100vw;
+		right:0px;
+		top:0px;
+		color:#ffffff;
+		
+	}
+	
+	li.left{
+		display:none;
+	}
+	
+	ul#meniu, ul#submeniu{
+		font-size:3.5vw;
+		background-color:#000000;
+		color:white;	
+	}
+	
+	ul#meniu>li>a {
+		color:#ffffff;
+	}
+	
+	ul#meniu{
+		width:100vw;			
+	}
+	
+	ul#submeniu{
+		font-size:2.3vw;
+	}
+	
+	li.right{
+		float:left;	
+	}
+	
+	.grid-container-footer {
+		grid-template-columns: auto;
+		grid-template-rows:auto auto auto;
+		width:50vw;
+		height:30%;
+		background-color:white;
+		padding-left:1%;   
+	}
+	
+    
+	.grid-container{
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+		
+    }
+	.grid-item>h2{		
+		text-align: center;
+  }
+	
+}
+
+@media screen and  (max-width:400px){
+	
+	main{
+		margin-top:20%;
+	}
+	
+	#coming_soon{
+	margin-top:50%;
+	margin-bottom:40%;
+}
+	
+	nav{
+		width:100vw;
+		right:0px;
+		top:0px;
+		color:#ffffff;
+		
+	}
+	
+	li.left{
+		display:none;
+	}
+	
+	ul#meniu, ul#submeniu{
+		font-size:3.5vw;
+		background-color:#000000;
+		color:white;	
+	}
+	
+	ul#meniu>li>a {
+		color:#ffffff;
+	}
+	
+	ul#meniu{
+		width:100vw;			
+	}
+	
+	ul#submeniu{
+		font-size:2.3vw;
+	}
+	
+	li.right{
+		float:left;	
+	}
+	
+	.grid-container-footer {
+		grid-template-columns: auto;
+		grid-template-rows:auto auto auto;
+		width:50vw;
+		height:30%;
+		background-color:white;
+		padding-left:1%;   
+	}
+	
+    
+	.grid-container{
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+		
+    }
+	.grid-item>h2{		
+		text-align: center;
+  }
+}
+
+
+

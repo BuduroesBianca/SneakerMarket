@@ -1,0 +1,51 @@
+main {
+	margin-left: 70px;
+	margin-right: 70px;
+	text-align: center;
+	font-size:1.3rem;
+	
+}
+
+p {
+	font-size:20px;
+}
+
+#gr{
+  display:grid;
+  grid-template-columns: auto auto auto;
+
+}
+
+#gr img {
+  width:100%;
+}
+
+
+#gr figure:hover {
+  box-shadow: grey 0px 8px 15px;
+}
+
+#gr figure {
+  transition: all 0.3s linear;
+}
+
+
+@media screen and (min-width:300px) and (max-width:600px){
+	
+	main{
+		margin-left:0px;
+		margin-right:0px;
+		
+	}
+	
+	p{
+		margin-left:30px;
+		margin-right:30px;
+		font-size:1.2rem;
+	}
+	
+	
+	#gr{
+		grid-template-columns:auto auto;
+	}
+}
